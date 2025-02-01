@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "link1": "home",
+    "link2": "services",
+    "link3": "Testimonial",
+    "link4": "Contact"
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  }
+}
