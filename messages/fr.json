@@ -1,12 +1,22 @@
 {
+  "_comment_menu": "Contient les éléments du menu de navigation",
   "menu": {
-    "link1": "accueil",
-    "link2": "services",
-    "link3": "témoignages",
-    "link4": "contact"
+    "link1": "Accueil",
+    "link2": "Services",
+    "link3": "L'Agence",
+    "link4": "Blog",
+    "link5": "Contact",
+    "title": "Automatiser - Innover - Accélérer"
   },
-  "HomePage": {
-    "title": "Bonjour à tous !",
-    "about": "Aller à la page à propos"
+  "cardServiceSection": {
+    "titleOne": "Graphisme & illustration",
+    "titleTwo": "Marketing & Communication",
+    "titleThree": "Ingénierie Informatique",
+    "titleFors": "Impressions & sérigraphie",
+    "descOne": "Votre entreprise a-t-elle besoin d’exister, d’être vue et d’être appréciée à sa juste valeur ? Vous hésitez sur l’image qui définit le mieux votre offre sur le marché cible, vous en avez marre du déjà vu, notre solution IKOUMA-CREA est disponible pour vous, unique et authentique mais encore plus, adaptée à toutes vos préoccupations d’identité de marque, de visuels, de création graphique, création print, motion design, d’illustration, etc….",
+    "descTwo": "Si la croissance de votre entreprise ne répond pas à vos attentes et que vous peinez à vous implanter sur un marché concurrentiel, une solution complète s'offre à vous : une stratégie marketing et communication sur mesure. Nous vous aidons à définir votre marché, identifier votre clientèle cible et la concurrence, et à proposer une solution efficace qui prend en compte la dimension multicanal et l'aspect psychologique des consommateurs, afin d'améliorer votre visibilité et votre rendement.",
+    "descThree": "Investir dans la technologie et l’innovation numérique est une stratégie pour améliorer l’efficacité et générer de nouvelles sources de revenus. Nous offrons des services de conseil et d’accompagnement dans divers secteurs (industrie, finance, télécommunication, ONGs, etc.) pour la gestion des systèmes réseaux, le développement web et mobile, ainsi que le référencement. Nos solutions IT innovantes et adaptées contribuent à la performance et à l’efficacité des entreprises.",
+    "descFors": "L’impression numérique joue un rôle crucial dans la construction et la promotion de l’identité de votre marque. Elle permet à votre marque de créer des supports de communication personnalisés, flexibles et de haute qualité pour transmettre leur message de manière efficace et mémorable. Il s’agit effectivement d’un processus que nous utilisons pour la reproduction des images ou des documents sur divers supports de communication, etc. Grâce aux avancées technologiques, notre système numérique permet également une reproduction de haute qualité avec des détails précis et des couleurs vives. Que ce soit pour imprimer des affiches, des brochures.",
+    "show": "Voir plus"
   }
 }

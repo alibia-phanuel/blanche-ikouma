@@ -1,12 +1,23 @@
 {
+  "_comment_menu": "Contains the navigation menu items",
   "menu": {
-    "link1": "home",
-    "link2": "services",
-    "link3": "Testimonial",
-    "link4": "Contact"
+    "link1": "Home",
+    "link2": "Services",
+    "link3": "Agency",
+    "link4": "Blog",
+    "link5": "Contact",
+    "title": "Automate-innovate-accelerate"
   },
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "_comment_card": "Contains the information for the card",
+  "cardServiceSection": {
+    "titleOne": "Graphic Design & Illustration",
+    "titleTwo": "Marketing & Communication",
+    "titleThree": "IT Engineering",
+    "titleFors": "Digital Printing & Screen Printing",
+    "descOne": "Does your company need to exist, be seen, and be appreciated at its true value? Are you unsure about the image that best represents your offer in the target market? Tired of the same old designs? Our IKOUMA-CREA solution is available for you—unique, authentic, and perfectly tailored to your brand identity needs, visual creation, graphic design, print design, motion design, illustration, and more.",
+    "descTwo": "If your company's growth does not meet your expectations and you struggle to establish yourself in a competitive market, a comprehensive solution is available: a tailored marketing and communication strategy. We help you define your market, identify your target audience and competitors, and propose an effective solution that considers the multichannel dimension and the psychological aspect of consumers, enhancing your visibility and performance.",
+    "descThree": "Investing in technology and digital innovation is a strategic way to enhance efficiency and generate new revenue streams. We provide consulting and support services across various industries (industry, finance, telecommunications, NGOs, etc.) for network system management, web and mobile development, and SEO. Our innovative and tailored IT solutions contribute to business performance and efficiency.",
+    "descFors": "Digital printing plays a crucial role in building and promoting your brand identity. It allows your brand to create personalized, flexible, and high-quality communication materials to convey your message effectively and memorably. This is a process we use to reproduce images or documents on various communication media. Thanks to technological advancements, our digital system also ensures high-quality reproduction with precise details and vibrant colors, whether for posters, brochures, or other print materials.",
+    "show": "show more"
   }
 }
