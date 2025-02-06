@@ -1,28 +1,34 @@
-// Ce fichier est un Server Component (composant côté serveur) utilisé pour gérer la mise en page globale de l'application.
+import { getMessages } from "next-intl/server";
+import { ReactNode } from "react"; // Import de ReactNode
+import ThemeProviderWrapper from "../../components/ThemeProviderWrapper";
+import "../../app/globals.css";
 
-import { getMessages } from "next-intl/server"; // ✅ Importation de la fonction permettant de récupérer les messages de traduction côté serveur
-import ThemeProviderWrapper from "../../components/ThemeProviderWrapper"; // ✅ Importation du wrapper qui gère le thème (dark mode et light mode)
-import "../../app/globals.css"; // ✅ Importation des styles globaux
+// Définition des types pour les propriétés du composant RootLayout
+export interface LayoutProps {
+  children: ReactNode;
+  params: Promise<{ locale: string }>; // Supporte à la fois un objet et une promesse
+}
 
-export default async function RootLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode; // ✅ `children` représente les composants enfants qui seront affichés à l'intérieur de ce layout.
-  params: { locale: string }; // ✅ `params` contient les paramètres d'URL, notamment la langue choisie.
-}>) {
-  const messages = await getMessages(); // ✅ Récupération des messages de traduction en fonction de la langue actuelle
-  const locale = params.locale; // ✅ Extraction de la locale depuis les paramètres
+export default async function RootLayout({ children, params }: LayoutProps) {
+  // Résolution explicite de la promesse pour `params`
+  const resolvedParams = await (params instanceof Promise
+    ? params
+    : Promise.resolve(params));
+
+  // Récupérer la locale à partir de `resolvedParams` avec une valeur par défaut
+  const locale = resolvedParams?.locale ?? "fr"; // Si `locale` n'est pas défini, utilise "fr" par défaut
+
+  // Récupérer les messages pour la locale
+  const messages = await getMessages({ locale }); // Récupère les messages spécifiques à la locale
+
+  // Log pour vérifier la structure de `resolvedParams` (utile pour le débogage)
+  console.log(resolvedParams);
 
   return (
     <html lang={locale}>
-      {/* ✅ Définition de la langue du document HTML */}
       <body className="bg-[#f5f1f1c4] dark:bg-[#292929] text-black dark:text-white">
-        {/* ✅ Définition des couleurs de fond et de texte en fonction du mode clair/sombre */}
-        {/* ✅ ThemeProviderWrapper : Ce composant englobe toute l'application et applique le bon thème et la traduction */}
         <ThemeProviderWrapper messages={messages} locale={locale}>
-          {children}{" "}
-          {/* ✅ Affichage des composants enfants à l'intérieur du layout */}
+          {children}
         </ThemeProviderWrapper>
       </body>
     </html>
