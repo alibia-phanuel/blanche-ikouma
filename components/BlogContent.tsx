@@ -110,7 +110,7 @@ const BlogContent = () => {
             <div className="w-12 h-12 border-4 border-[#EAC258] border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
             {currentArticles.map((article) => (
               <article
                 key={article.id}
@@ -134,7 +134,7 @@ const BlogContent = () => {
                     {article.description}
                   </p>
                   <Link href={`/article/${article.slug}`}>
-                    <button className="mt-4 bg-[#EAC258] text-black px-4 py-2 rounded-md font-semibold hover:bg-[#c79d46]">
+                    <button className="mt-4 bg-[#EAC258] dark:text-white text-black px-4 py-2 rounded-md font-semibold hover:bg-[#c79d46]">
                       Lire plus
                     </button>
                   </Link>
@@ -143,23 +143,23 @@ const BlogContent = () => {
             ))}
           </div>
         )}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-8 space-x-2 ">
           <button
             onClick={() => handlePagination(currentPage - 1)}
             disabled={currentPage === 1 || loading}
-            className={`px-4 py-2 text-black bg-[#EAC258] rounded-md font-semibold hover:bg-[#c79d46] ${
+            className={`px-4 py-2 text-black bg-[#EAC258] dark:text-white rounded-md font-semibold hover:bg-[#c79d46] ${
               currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
             Précédent
           </button>
-          <span className="px-4 py-2 text-black bg-white dark:bg-gray-800 rounded-md">
+          <span className="px-4 py-2 text-black dark:text-white bg-white dark:bg-gray-800 rounded-md">
             Page {currentPage} / {totalPages}
           </span>
           <button
             onClick={() => handlePagination(currentPage + 1)}
             disabled={currentPage === totalPages || loading}
-            className={`px-4 py-2 text-black bg-[#EAC258] rounded-md font-semibold hover:bg-[#c79d46] ${
+            className={`px-4 py-2 text-black bg-[#EAC258] dark:text-white rounded-md font-semibold hover:bg-[#c79d46] ${
               currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Homeclient() {
   return (
-    <div className="w-full my-8 py-8 flex justify-center min-h-[300px] items-center bg-white border border-gray-200  shadow-sm dark:bg-black dark:border-gray-700">
+    <div className="w-full my-[200px] py-10 flex justify-center min-h-[300px] items-center bg-white border border-gray-200  shadow-sm dark:bg-black dark:border-gray-700">
       <div className="container flex flex-wrap justify-evenly items-center gap-4">
         <div className="flex  justify-between items-center gap-4 text-center flex-col  ">
           <div className="text-2xl font-bold text-[50px] dark:text-[#EAC258]">

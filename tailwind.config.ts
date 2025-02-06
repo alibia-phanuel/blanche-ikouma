@@ -1,15 +1,14 @@
-import type { Config } from "tailwindcss";
-
-export default {
-  darkMode: "class", // Active le mode sombre basé sur la classe
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class", // Garde cette ligne si tu veux utiliser Tailwind pour le dark mode
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
   theme: {
     extend: {},
   },
   plugins: [],
-} satisfies Config;
+};
