@@ -3,269 +3,114 @@ import {
   FaBullhorn,
   FaLaptopCode,
   FaPrint,
+  FaTruck,
+  FaHeadset,
+  FaLightbulb,
+  FaLanguage,
+  FaGraduationCap,
+  FaSearch,
+  FaHandshake,
+  FaCheckCircle,
 } from "react-icons/fa";
 
+import { useTranslations } from "next-intl";
 const ServicesContent = () => {
+  const services = [
+    {
+      icon: <FaBullhorn className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "titleTwo",
+      desc: "descTwo",
+    },
+    {
+      icon: <FaLaptopCode className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "titleThree",
+      desc: "descThree",
+    },
+    {
+      icon: <FaPrint className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "titleFors",
+      desc: "descFors",
+    },
+    {
+      icon: <FaSearch className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleOne",
+      desc: "SdescOne",
+    },
+    {
+      icon: <FaHandshake className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleTwo",
+      desc: "SdescTwo",
+    },
+    {
+      icon: <FaCheckCircle className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleThree",
+      desc: "SdescThree",
+    },
+    {
+      icon: <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "titleOne",
+      desc: "descOne",
+    },
+    {
+      icon: <FaTruck className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleFors",
+      desc: "SdescFors",
+    },
+    {
+      icon: <FaHeadset className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleFive",
+      desc: "SdescFive",
+    },
+    {
+      icon: <FaLightbulb className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleSix",
+      desc: "SdescSix",
+    },
+    {
+      icon: <FaLanguage className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleSevent",
+      desc: "SdescSevent",
+    },
+    {
+      icon: <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "Stitle8",
+      desc: "Sdesc8",
+    },
+    {
+      icon: <FaGraduationCap className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "Stitle9",
+      desc: "Sdesc9",
+    },
+  ];
+  const c = useTranslations("cardServiceSection");
   return (
     <div className=" flex  flex-col justify-center items-center">
-      <div className="container">
-        <p className="text-center my-10">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus vitae,
-          sint distinctio molestiae Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Minus vitae, sint distinctio molestiaeLorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Minus vitae, sint
-          distinctio molestiae
+      <div className="container flex justify-center items-center flex-col px-4">
+        <p className="text-center text-gray-500 dark:text-white my-20 w-1/2 max-md:w-full text-xl">
+          {c("ServiceTitle")}
         </p>
-        <div className="flex justify-evenly items-center my- flex-wrap">
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
+
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className={`flex justify-evenly items-center my-y flex-wrap ${
+              index % 2 !== 0 ? "flex-row-reverse" : ""
+            }`}
+          >
+            <div className="w-1/2 px-4 max-md:w-full max-md:my-2">
+              <div className="flex flex-col gap-2">
+                {service.icon}
+                <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                  {c(service.title)}
+                </span>
+              </div>
+              <div className="text-gray-500 dark:text-white">
+                {c(service.desc)}
+              </div>
             </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
+            <div className="w-1/2 max-md:w-full border-2 border-[#EAC258] max-md:my-2 bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center shadow-lg"></div>
           </div>
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-        </div>
-        {/* fin one */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaBullhorn className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* fin Two */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaLaptopCode className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-        </div>
-        {/* fin Three */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPrint className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* {fin Foors} */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-        </div>
-        {/* {fin Foors} */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/*  */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-        </div>
-        {/*  */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/*  */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-        </div>
-        {/*  */}
-        <div className="flex justify-evenly items-center my-24 flex-wrap">
-          <div className="w-[319px] bg-[url('/images/baner.png')] h-[319px] bg-gray-500 flex justify-center items-center rounded-lg shadow-lg"></div>
-          <div className="">
-            <div className="flex flex-col gap-2">
-              <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />
-              <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Graphisme & illustration
-              </span>
-            </div>
-            <div>
-              We focus on providing the right tool <br></br> for product
-              innovation and digital communication
-            </div>
-            <div>
-              <ul>
-                <li className="font-semibold capitalize ">one</li>
-                <li className="font-semibold capitalize ">two</li>
-                <li className="font-semibold capitalize ">three</li>
-                <li className="font-semibold capitalize ">Foors</li>
-                <li className="font-semibold capitalize ">Five</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/*  */}
+        ))}
       </div>
     </div>
   );
