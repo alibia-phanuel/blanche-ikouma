@@ -3,7 +3,7 @@ import HomeHero from "@/components/HomeHero";
 import HomeSectionSetion from "@/components/homeSectionSetion";
 import Homeclient from "@/components/Homeclient";
 import { useLocale } from "next-intl"; // Importer useLocale
-import Testimonial from "@/components/Testimonial";
+
 export default function Home() {
   const locale = useLocale(); // Récupérer la langue actuelle
   // Utilisation du hook useTranslations pour récupérer les traductions du menu
@@ -14,7 +14,6 @@ export default function Home() {
       <HomeHero title={t("title")} />
       <HomeSectionSetion locale={locale} />
       <Homeclient />
-      <Testimonial />
     </>
   );
 }

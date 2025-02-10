@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"; // ✅ Importation des hooks React 
 import { ThemeProvider } from "../contexts/theme"; // ✅ Importation du contexte permettant de partager le thème dans toute l'application.
 import { NextIntlClientProvider } from "next-intl"; // ✅ Provider permettant de gérer la traduction côté client.
 import Navbar from "./NavBar"; // ✅ Importation de la barre de navigation.
+import Footer from "./Footer";
 
 export default function ThemeProviderWrapper({
   children,
@@ -37,11 +38,10 @@ export default function ThemeProviderWrapper({
       {/* ✅ Fournit le contexte du thème pour tous les composants enfants */}
       <NextIntlClientProvider messages={messages} locale={locale}>
         {/* ✅ Fournit les traductions à tous les composants enfants */}
-        <div className="h-screen">
-          <Navbar locale={locale} />{" "}
-          {/* ✅ Affichage de la barre de navigation avec la langue actuelle */}
-          {children} {/* ✅ Affichage du contenu de la page */}
-        </div>
+        <Navbar locale={locale} />{" "}
+        {/* ✅ Affichage de la barre de navigation avec la langue actuelle */}
+        {children} {/* ✅ Affichage du contenu de la page */}
+        <Footer />
       </NextIntlClientProvider>
     </ThemeProvider>
   );
