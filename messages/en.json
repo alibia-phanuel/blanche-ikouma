@@ -43,5 +43,15 @@
     "SdescSevent": "We help our clients customize their products, whether for logos, specific designs, or unique features. We also offer personalized packaging options for gifts or marketing needs.",
     "Sdesc8": "IKOUMA WISH HUNTER provides certified and non-certified translation services for contracts, product specifications, and other technical documents. We also offer interpreters for meetings or calls with Chinese suppliers.",
     "Sdesc9": "We organize workshops and training sessions to help our clients better understand the complexities of purchasing in China. These resources are especially useful for individuals or small businesses looking to gain independence."
+  },
+  "Tesimonial": {
+    "titleOne": "Customer Retention",
+    "titletwo": "Years of Service",
+    "titleThree": "Teams of Professionals",
+    "titleFors": "Satisfied Clients",
+    "NewsletterTitle": "Newsletter",
+    "NewsletterDescription": "Get the latest updates directly in your inbox.",
+    "NewsletterInput": "Enter your email.",
+    "NewsletterBtn": "Subscribe"
   }
 }

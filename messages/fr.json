@@ -42,5 +42,15 @@
     "Sdesc9": "Nous organisons des ateliers et des sessions de formation pour aider nos clients à mieux comprendre les subtilités des achats en Chine. Ces ressources sont particulièrement utiles pour les particuliers ou les petites entreprises qui souhaitent gagner en autonomie.",
     "show": "Voir plus",
     "ServiceTitle": "Découvrez l'ensemble des services proposés par IKOUMA LABS. Que ce  soit pour le design, le marketing  digital ou encore l’accompagnement technologique, nous mettons à votre disposition notre expertise pour répondre à vos besoins. Explorez nos  solutions innovantes et personnalisées dès maintenant !"
+  },
+  "Tesimonial": {
+    "titleOne": "Fidélisation des clients",
+    "titletwo": "Années de service",
+    "titleThree": "Équipes de professionnels",
+    "titleFors": "Clients satisfaits",
+    "NewsletterTitle": "Newsletter",
+    "NewsletterDescription": "Recevez les dernières mises à jour directement dans votre boîte mail.",
+    "NewsletterInput": "Entrez votre email.",
+    "NewsletterBtn": "S'inscrire"
   }
 }

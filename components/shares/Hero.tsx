@@ -1,5 +1,4 @@
 import React from "react";
-
 interface HeroProps {
   link: string;
   title: string;

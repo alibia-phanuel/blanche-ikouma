@@ -46,7 +46,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white dark:bg-black py-8">
+    <footer className="bg-white dark:bg-black pb-8">
       <div className="container mx-auto px-4 border-t border-[#3d3d3d] pt-8">
         <div className="flex justify-evenly flex-wrap gap-6 text-center md:text-left">
           {footers.map((section, index) => (
