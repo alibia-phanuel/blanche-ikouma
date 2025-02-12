@@ -30,7 +30,7 @@ const Navbar = ({ locale }: { locale: string }) => {
             </div>
           </Link>
         </div>
-        <div className="flex gap-4 max-md:overflow-x-auto dark:bg-[#292929] capitalize text-[#292929] dark:text-[#ffffff] text-lg max-md:bg-[#ffffff] justify-center items-center max-md:absolute w-full max-md:bottom-[-62px] max-md:px-5 max-md:py-2">
+        <div className="flex   z-40  gap-4 max-md:overflow-x-auto dark:bg-[#292929] capitalize text-[#292929] dark:text-[#ffffff] text-lg max-md:bg-[#ffffff] justify-center items-center max-md:absolute w-full max-md:bottom-[-62px] max-md:px-5 max-md:py-2">
           <Link href={`/${locale}/`}>{t("link1")}</Link>
           <Link href={`/${locale}/services`}>{t("link2")}</Link>
           <Link href={`/${locale}/Agency`}>{t("link3")}</Link>
