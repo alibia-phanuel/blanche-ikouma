@@ -68,31 +68,31 @@ const ServicesContent = () => {
       icon: <FaHeadset className="text-2xl mb-2 text-[#EAC258]" />,
       title: "StitleFive",
       desc: "SdescFive",
-      bg: "bg-[url('/images/baner.png')]",
+      bg: "bg-[url('/services/09.jpg')]",
     },
     {
       icon: <FaLightbulb className="text-2xl mb-2 text-[#EAC258]" />,
       title: "StitleSix",
       desc: "SdescSix",
-      bg: "bg-[url('/images/baner.png')]",
-    },
-    {
-      icon: <FaLanguage className="text-2xl mb-2 text-[#EAC258]" />,
-      title: "StitleSevent",
-      desc: "SdescSevent",
-      bg: "bg-[url('/images/baner.png')]",
+      bg: "bg-[url('/services/10.jpg')]",
     },
     {
       icon: <FaPaintBrush className="text-2xl mb-2 text-[#EAC258]" />,
+      title: "StitleSevent",
+      desc: "SdescSevent",
+      bg: "bg-[url('/services/11.jpg')]",
+    },
+    {
+      icon: <FaLanguage className="text-2xl mb-2 text-[#EAC258]" />,
       title: "Stitle8",
       desc: "Sdesc8",
-      bg: "bg-[url('/images/baner.png')]",
+      bg: "bg-[url('/services/12.jpg')]",
     },
     {
       icon: <FaGraduationCap className="text-2xl mb-2 text-[#EAC258]" />,
       title: "Stitle9",
       desc: "Sdesc9",
-      bg: "bg-[url('/images/baner.png')]",
+      bg: "bg-[url('/services/13.jpg')]",
     },
   ];
   const c = useTranslations("cardServiceSection");

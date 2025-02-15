@@ -77,12 +77,12 @@ const articles = [
     slug: "securiser-app-web",
   },
 ];
-
+import { useLocale } from "next-intl";
 const BlogContent = () => {
   const articlesPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
-
+  const locale = useLocale();
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
   const currentArticles = articles.slice(
@@ -133,7 +133,7 @@ const BlogContent = () => {
                   <p className="text-gray-600 dark:text-gray-400">
                     {article.description}
                   </p>
-                  <Link href={`/article/${article.slug}`}>
+                  <Link href={`/${locale}/article/${article.slug}`}>
                     <button className="mt-4 bg-[#EAC258] dark:text-white text-black px-4 py-2 rounded-md font-semibold hover:bg-[#c79d46]">
                       Lire plus
                     </button>
