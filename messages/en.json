@@ -53,5 +53,24 @@
     "NewsletterDescription": "Get the latest updates directly in your inbox.",
     "NewsletterInput": "Enter your email.",
     "NewsletterBtn": "Subscribe"
+  },
+  "Agence": {
+    "titleOne": "Who are we?",
+    "desc": "Enjoy the best experience! Launched in 2023 and based in the heart of Douala, IKOUMA LABS is a 360° strategic communication agency that stands out for its sharp expertise and strong sense of innovation.",
+    "BoxCartTitle": "Our Missions",
+    "CartTitleOne": "Strategic Support",
+    "CartTitleTwo": "Digital Expertise",
+    "CartTitleThree": "Tailored Visibility",
+    "CartTitleFour": "Value Transmission",
+    "CartTitleFive": "Comprehensive Digital Solutions",
+    "CartTitleSix": "Personalized Approach",
+    "CartdescOne": "Communication consulting, advertising, and PR.",
+    "CartdescTwo": "Content creation, SEO, and web page management.",
+    "CartdescThree": "Visual identity and communication materials.",
+    "CartdescFour": "Innovative and impactful strategies.",
+    "CartdescFive": "Websites, mobile apps, and social networks.",
+    "CartdescSix": "Personalized follow-up and project management.",
+    "titleTeams": "Our Team",
+    "DescTeams": "A young, dynamic, and passionate team, combining creativity, expertise, and innovation. Specialized in communication, marketing, and IT engineering, our mission is to support your growth with tailor-made and high-performance solutions."
   }
 }

@@ -8,16 +8,17 @@ import {
 } from "react-icons/fa";
 import { MdVisibility, MdWeb } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
-
-import Hero from "@/components/shares/Hero";
 import { useTranslations } from "next-intl";
+import Hero from "@/components/shares/Hero";
+
 const Page = () => {
-  const t = useTranslations("menu");
+  const t = useTranslations("Agence");
+  const m = useTranslations("menu");
   return (
     <div className="flex flex-col">
       <Hero
-        link={t("link3")}
-        title={t("title")}
+        link={m("link3")}
+        title={m("title")}
         backgroundImage="/images/agency.jpg"
       />
       <div className="w-full flex justify-center items-center">
@@ -25,53 +26,47 @@ const Page = () => {
           {/* Qui sommes-nous ? */}
           <section className="mb-12 text-center">
             <h2 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#EAC258]">
-              <FaLightbulb className="text-4xl" /> Qui sommes-nous ?
+              <FaLightbulb className="text-4xl" /> {t("titleOne")}
             </h2>
-            <p className="mt-4 text-lg max-w-2xl mx-auto">
-              Profitez de la meilleure expérience ! Lancée en 2023 et implantée
-              au cœur de Douala,
-              <strong> IKOUMA LABS</strong> est une agence de communication
-              stratégique à 360° qui se démarque par son savoir-faire pointu et
-              son sens aigu de l&lsquo;innovation.
-            </p>
+            <p className="mt-4 text-lg max-w-2xl mx-auto">{t("desc")}</p>
           </section>
 
           {/* Nos Missions */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold flex items-center gap-2 text-[#EAC258]">
-              <FaChartLine className="text-4xl" /> Nos missions
+              <FaChartLine className="text-4xl" /> {t("BoxCartTitle")}
             </h2>
             <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   icon: FaBullhorn,
-                  title: "Accompagnement stratégique",
-                  desc: "Conseil en communication, publicité et RP.",
+                  title: `${t("CartTitleone")}`,
+                  desc: `${t("CartdescOne")}`,
                 },
                 {
                   icon: FaLaptopCode,
-                  title: "Expertise digitale",
-                  desc: "Création de contenus, SEO et gestion de pages web.",
+                  title: `${t("CartTitleTwo")}`,
+                  desc: `${t("CartdescTwo")}`,
                 },
                 {
                   icon: MdVisibility,
-                  title: "Visibilité sur mesure",
-                  desc: "Identité visuelle et supports de communication.",
+                  title: `${t("CartTitleThree")}`,
+                  desc: `${t("CartdescThree")}`,
                 },
                 {
                   icon: FaRocket,
-                  title: "Transmission des valeurs",
-                  desc: "Stratégies innovantes et percutantes.",
+                  title: `${t("CartTitleFour")}`,
+                  desc: `${t("CartdescFour")}`,
                 },
                 {
                   icon: MdWeb,
-                  title: "Solutions digitales complètes",
-                  desc: "Sites web, applications mobiles et réseaux sociaux.",
+                  title: `${t("CartTitleFive")}`,
+                  desc: `${t("CartdescFive")}`,
                 },
                 {
                   icon: FaUsers,
-                  title: "Approche sur mesure",
-                  desc: "Suivi personnalisé et pilotage des projets.",
+                  title: `${t("CartTitleSix")}`,
+                  desc: `${t("CartdescSix")}`,
                 },
               ].map(({ icon: Icon, title, desc }, index) => (
                 <li
@@ -93,14 +88,9 @@ const Page = () => {
           {/* Notre Équipe */}
           <section className="text-center">
             <h2 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#EAC258]">
-              <RiTeamFill className="text-4xl" /> Notre Équipe
+              <RiTeamFill className="text-4xl" /> {t("titleTeams")}
             </h2>
-            <p className="mt-4 text-lg max-w-2xl mx-auto">
-              Une équipe jeune, dynamique et passionnée, combinant créativité,
-              expertise et innovation. Spécialisée en communication, marketing
-              et ingénierie informatique, notre mission est d’accompagner votre
-              croissance avec des solutions sur mesure et performantes.
-            </p>
+            <p className="mt-4 text-lg max-w-2xl mx-auto">{t("DescTeams")}</p>
           </section>
         </div>
       </div>
